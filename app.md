@@ -1,1 +1,1 @@
-Bienvenue dans mon application version 1.0.
+Bienvenue dans mon application version 1.0
