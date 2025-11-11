@@ -1,0 +1,22 @@
+Parfois apres avoir saisi les commandes dans le terminale. Celles en rapport avec nouveaux push, on peut avoir une erreur
+generalement "error: failled to push refs to [lien de ton repo github]"
+
+pour resoudre ce probleme, il faut d'abord verifie que le fichier n'est pas pusher sur un autre repo. pour cela on tape
+la commande "git remote -v"
+Si vous vous rendez compte qu'il est bien place dans votre repo, verifier que votre dossier ait bel et bien des fichiers 
+que vous souhaiter pusher dans le repo github. Sinon, creeer ces fichiers. Esuite, suivez les commandes:
+
+# 1. Ajouter tous les fichiers du dossier
+git add .
+
+# 2. Vérifier que les fichiers sont bien ajoutés
+git status
+
+# 3. Faire le commit
+git commit -m "first commit"
+
+# 4. Créer/renommer la branche en main
+git branch -M main
+
+# 5. Pousser vers GitHub
+git push -u origin main
